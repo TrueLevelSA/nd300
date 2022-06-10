@@ -1,3 +1,11 @@
+# Copyright 2022 TrueLevel SA
+#
+# This Source Code Form is subject to the terms of the Mozilla Public
+# License, v. 2.0. If a copy of the MPL was not distributed with this
+# file, You can obtain one at https://mozilla.org/MPL/2.0/.
+#
+# SPDX-License-Identifier: MPL-2.0
+
 run:
   concurrency: 4
   go: "1.17" # Golangci-lint is not ready for 1.18 yet...
@@ -251,6 +259,8 @@ linters-settings:
     lang-version: "1.17"
 
     extra-rules: false
+  goheader:
+    template-path: ".licensesnip"
   gomodguard:
     blocked:
       modules:
